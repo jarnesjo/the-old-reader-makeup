@@ -105,6 +105,9 @@ html.makeup {
     }
 
     .post {
+      padding: 5px 0 0;
+      position: relative;
+
       ol,
       ul {
         list-style: none;
@@ -117,7 +120,16 @@ html.makeup {
         ol li {
           font-size: inherit;
           line-height: inherit;
+      &.unread {
+        &::before {
+          box-shadow: -4px 0 #26687f;
+          position: absolute;
+          top: 0;
+          left: -30px;
+          height: 100%;
+          width: 4px;
         }
+      }
 
         blockquote {
           font-size: inherit;
