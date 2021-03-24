@@ -114,12 +114,6 @@ html.makeup {
         padding-left: 0;
       }
 
-      .content-body {
-        p,
-        ul li,
-        ol li {
-          font-size: inherit;
-          line-height: inherit;
       &.unread {
         &::before {
           box-shadow: -4px 0 #26687f;
@@ -131,13 +125,19 @@ html.makeup {
         }
       }
 
-        blockquote {
-          font-size: inherit;
-          line-height: inherit;
-          background-color: transparent;
-          margin: inherit;
-          padding: inherit;
-        }
+      p,
+      ul li,
+      ol li {
+        font-size: inherit;
+        line-height: inherit;
+      }
+
+      blockquote {
+        font-size: inherit;
+        line-height: inherit;
+        background-color: transparent;
+        margin: inherit;
+        padding: inherit;
       }
 
       /* Date at top */
